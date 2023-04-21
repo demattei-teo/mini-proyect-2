@@ -1,0 +1,103 @@
+@use '/sass/general/variables' as *;
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 20.5rem;
+  height: 16rem;
+  border-radius: 0.625rem;
+  box-shadow: 5px 10px 15px 1px rgba(0, 0, 0, 0.47);
+  position: relative;
+  padding: 1rem 1rem;
+
+  &-container-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &-title {
+    font-weight: $font-bold;
+    font-size: 1.375rem;
+  }
+  &-detail {
+    font-weight: $font-medium;
+    font-size: 1rem;
+    color: #00000071;
+  }
+}
+
+.single-styles-cyan {
+  @media (min-width: 64rem) {
+    grid-column: 1 / 1;
+    grid-row: 1 / 3;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $CYAN;
+    z-index: 1;
+    border-radius: 0.625rem 0.625rem 0rem 0rem;
+  }
+}
+
+.single-style-red {
+  @media (min-width: 64rem) {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $RED;
+    z-index: 1;
+    border-radius: 0.625rem 0.625rem 0rem 0rem;
+  }
+}
+
+.single-style-orange {
+  @media (min-width: 64rem) {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $ORANGE;
+    z-index: 1;
+    border-radius: 0.625rem 0.625rem 0rem 0rem;
+  }
+}
+.single-style-violet {
+  @media (min-width: 64rem) {
+    grid-column: 3 / 3;
+    grid-row: 1 / 3;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $VIOLET;
+    z-index: 1;
+    border-radius: 0.625rem 0.625rem 0rem 0rem;
+  }
+}

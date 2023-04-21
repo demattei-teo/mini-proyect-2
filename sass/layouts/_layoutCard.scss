@@ -1,0 +1,16 @@
+.layout-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  max-width: 70rem;
+  padding: 2rem 0;
+  gap: 40px;
+  margin: 0 auto;
+
+  @media (min-width: 64rem) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
